@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Bottombar() {
-  return (
-    <div>Bottombar</div>
-  )
+  return <div style={{ marginTop: "400px" }}>Bottombar</div>;
 }
