@@ -1,7 +1,10 @@
 import React from 'react'
+import Banner from "./Banner"
 
 export default function EventInfo() {
   return (
-    <div>행사정보창</div>
+    <div>
+      <Banner />
+    </div>
   )
 }
