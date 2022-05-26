@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import Location from "./Location";
 
-export default function Festival() {
+const Festival = () => {
   return (
-    <div>Festival</div>
-  )
-}
+    <div className="festival_container" style={{ marginTop: "20px" }}>
+      <h4 className="festival">진행중인행사</h4>
+      <Location />
+    </div>
+  );
+};
+
+export default Festival;
