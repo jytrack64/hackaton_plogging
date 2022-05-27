@@ -1,10 +1,9 @@
 import React from 'react'
 import {BrowserRouter,Route,Routes,Link} from 'react-router-dom';
 import Bottombar from './component/Bottombar'
-import EventInfo from './component/EventInfo';
 import Main from './component/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Festival from './component/Festival';
 
 export default function App() {
   return (
@@ -12,7 +11,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/main' element={<Main/>}/>
-          <Route path='/' element={<EventInfo/>}/>
+          <Route path='/' element={<Festival/>}/>
         </Routes>
       </BrowserRouter>
       <Bottombar/>

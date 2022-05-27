@@ -15,4 +15,5 @@ export default function Bottombar() {
         </Navbar>
     </div>
   )
+
 }
