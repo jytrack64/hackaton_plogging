@@ -7,14 +7,16 @@ import Festival from './component/Festival';
 
 export default function App() {
   return (
-    <div style={{width: '390px',height:'844px',border:'1px solid red',margin:'0 auto'}}>
+    <>
+    <div style={{width: '390px',height:'789px',border:'1px solid red',margin:'0 auto'}}>
       <BrowserRouter>
         <Routes>
           <Route path='/main' element={<Main/>}/>
           <Route path='/' element={<Festival/>}/>
         </Routes>
       </BrowserRouter>
-      <Bottombar/>
     </div>
+    <Bottombar/>
+    </>
   )
 }

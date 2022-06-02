@@ -1,7 +1,30 @@
-.me-auto {
+.bottombar {
+  background-color: #79e39b;
+  font-weight: bold;
   justify-content: center;
+  position: fixed;
+  width: 390px;
+  height: 55px;
+  top: 0;
+  margin: auto auto
 }
 
-.Navbar1 {
-  background-color: #79e39b;
+.bottombar_icons {
+  margin: auto auto;
+}
+
+
+.bottombar_icons_main{
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+
+}
+
+.bottombar_icons_event{
+
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+
 }

@@ -5,11 +5,11 @@ import '../Bottombar.css'
 export default function Bottombar() {
   return (
     <div>
-      <Navbar  bg="black" variant="dark">
+      <Navbar className='bottombar' >
           <Container>
-          <Nav className="me-auto">
-            <Nav.Link className="main" href="main">Main</Nav.Link>
-            <Nav.Link className="event" href="/">Event</Nav.Link>
+          <Nav className="bottombar_icons">
+            <Nav.Link className="bottombar_icons_main" href="main">Main</Nav.Link>
+            <Nav.Link className="bottombar_icons_event" href="/">Event</Nav.Link>
           </Nav>
           </Container>
         </Navbar>
