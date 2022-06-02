@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Location from "./Location";
 import Banner from "./Banner";
 import FestivalCard from "./FestivalCard";
@@ -13,5 +13,6 @@ const Festival = () => {
     </div>
   );
 };
+
 
 export default Festival;
