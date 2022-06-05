@@ -5,7 +5,7 @@ import Main from './component/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Festival from './component/Festival';
 import Profile from './component/Profile';
-
+import Running from './component/Running';
 
 export default function App() {
   return (
@@ -17,6 +17,7 @@ export default function App() {
           <Route path='/main' element={<Main/>}/>
           <Route path='/' element={<Festival/>}/>
           <Route path='/profile' element={<Profile/>}/>
+          <Route path='running' element={<Running/>}/>
         </Routes>
       </BrowserRouter>
     </div>
