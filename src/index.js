@@ -1,12 +1,9 @@
 import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
-<<<<<<< HEAD
-=======
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
->>>>>>> 355bc5c45c974f0d6d6743c10453d3a57cffd849
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

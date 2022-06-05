@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-function Profile() {
-  return (
-    <div>Profile</div>
-  )
-}
-
-export default Profile;
-=======
 import { contains, style } from 'dom-helpers'
 import React from 'react'
 import { Route, Routes, useNavigate } from 'react-router'
@@ -545,4 +534,3 @@ function Wastes() {
   
 
   
->>>>>>> 355bc5c45c974f0d6d6743c10453d3a57cffd849
