@@ -5,15 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
 import Menubar from './component/Menubar'
-import Main from './component/Main';
-import Festival from './component/Festival';
-import Profile from './component/Profile';
-import DetailFestival from "./component/DetailFestival";
+import Main from './component/main/Main';
+import Festival from './component/festival/Festival';
+import Profile from './component/profile/Profile';
+import DetailFestival from "./component/festival/DetailFestival";
 import './Scroll.css'
 import './styles/fonts/font.css'
-import Running from './component/Running';
-import Writing from "./component/Writing"
-import Comment from "./component/Writing"
+import Running from './component/running/Running';
+import Writing from "./component/profile/Writing"
+import Comment from "./component/profile/Writing"
 import "./index.css";
 
 export default function App() {

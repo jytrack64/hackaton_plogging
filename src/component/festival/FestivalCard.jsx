@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Button, Card, Col } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
-import '../FestivalCard.css'
+import '../../css/FestivalCard.css'
 
 export default function FestivalCard({ data }) {
   const [flag, setFlag] = useState(false);

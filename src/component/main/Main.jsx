@@ -1,6 +1,6 @@
 import React,{useRef,useEffect} from 'react'
 import {Container} from 'react-bootstrap'
-import '../css/Main.css'
+import '../../css/Main.css'
 
 import {gsap} from 'gsap'
 import { useNavigate } from 'react-router-dom'

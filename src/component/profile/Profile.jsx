@@ -8,7 +8,7 @@ import ToggleButton from 'react-bootstrap/ToggleButton'
 import Nav from 'react-bootstrap/Nav'
 import { Container, Row, Col } from 'react-bootstrap';
 import ProgressBar from 'react-bootstrap/ProgressBar'
-import profile from './Profile.css' 
+import profile from '../../css/Profile.css' 
 import Writing from './Writing';  
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';

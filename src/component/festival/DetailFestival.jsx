@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import "../DetailFestival.css";
+import "../../css/DetailFestival.css";
 
 function DetailFestival(props) {
   let { id } = useParams();

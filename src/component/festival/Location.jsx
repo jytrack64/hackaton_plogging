@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "react-bootstrap";
-import "./sample.css";
+import "../../css/sample.css";
 
 const Location = (props) => {
   let keyIdx = 1;

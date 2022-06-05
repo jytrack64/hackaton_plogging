@@ -1,7 +1,7 @@
 import { width } from "dom-helpers";
 import React from "react";
 import { useState } from 'react';
-import writingcss from './Writing.css';
+import writingcss from '../../css/Writing.css';
 import Nav from 'react-bootstrap/Nav'
 import { Navigate, useNavigate } from "react-router";
  
