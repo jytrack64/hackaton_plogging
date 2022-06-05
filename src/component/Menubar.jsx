@@ -8,9 +8,9 @@ export default function Menubar() {
       <Navbar className='menubar' >
           <Container>
           <Nav className="menubar_icons">
-            <Nav.Link className="menubar_icons_main" href="main">Main</Nav.Link>
+            <Nav.Link className="menubar_icons_main" href="/">Main</Nav.Link>
             <Nav.Link className="menubar_icons_profile" href="/profile">Profile</Nav.Link>
-            <Nav.Link className="menubar_icons_event" href="/">Event</Nav.Link>
+            <Nav.Link className="menubar_icons_event" href="/event">Event</Nav.Link>
           </Nav>
           </Container>
         </Navbar>
