@@ -1,25 +1,25 @@
-button {
+/* button {
   width: 50%;
   font-size: 18px;
   font-weight: 400;
   border: 1px none;
   background-color: white;
-}
+} */
 
-button::after {
+/* button::after {
   transform: translateY(2px);
   content: "";
   display: block;
   width: 95%;
   margin: 0 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+} */
 
-button:hover {
+/* button:hover {
   transition: ease-in-out 0.2s;
   border-bottom: 1px solid rgba(0, 0, 0, 3);
   font-size: 19px;
-}
+} */
 
 .writingContainer {
   height: "65vh";

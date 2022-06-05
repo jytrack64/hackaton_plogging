@@ -12,7 +12,6 @@ import profile from './Profile.css'
 import Writing from './Writing';  
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
-import Chart from './chart';
 
 
 

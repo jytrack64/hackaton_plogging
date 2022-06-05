@@ -15,7 +15,7 @@ function Banner() {
 
   return (
     <Carousel
-      style={{ width: "100%", height: "auto" }}
+      style={{ width: "100%", height: "auto", marginBottom: 20}}
       activeIndex={index}
       onSelect={handleSelect}
     >
@@ -32,7 +32,7 @@ function Banner() {
         <Carousel.Caption>
           <h3 onClick={() => {
             navigate("info/0")
-          }} style={{  fontSize:"25px", fontWeight:"600", color: "white" }}>재활용 쓰레기 올바른 분리배출 방법</h3>
+          }} style={{ fontFamily: "GmarketSansBold", fontStyle: "italic", fontSize:"25px", fontWeight:"600", color: "white" }}>재활용 쓰레기 올바른 분리배출 방법</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ width: "100%", height: "auto" }}>
@@ -46,7 +46,7 @@ function Banner() {
         <Carousel.Caption>
           <h3  onClick={() => {
             navigate("info/1")
-          }} style={{   fontSize:"30px", color: "white" }}>제로 웨이스트 하기</h3>
+          }} style={{ fontFamily: "GmarketSansBold", fontStyle: "italic", fontSize:"30px", color: "white" }}>제로 웨이스트 하기</h3>
          
         </Carousel.Caption>
       </Carousel.Item>
@@ -60,7 +60,7 @@ function Banner() {
         <Carousel.Caption>
           <h3  onClick={() => {
             navigate("info/2")
-          }} style={{ fontSize:"25px", fontWeight:"900", color: "white" }}>생활속 쓰레기줄이기</h3>
+          }} style={{ fontFamily: "GmarketSansBold", fontStyle: "italic", fontSize:"25px", fontWeight:"900", color: "white" }}>생활 속 쓰레기 줄이기</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
