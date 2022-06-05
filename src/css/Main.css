@@ -1,0 +1,40 @@
+
+.main{
+  display: flex;
+  background-image: url(../image/mainImg.png);
+  border: 2px solid black;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  height: 789px;
+  flex-direction: column;
+}
+
+.headline{
+  display: flex;
+  margin-top: 160px;
+}
+
+.headline_text{
+  color:white;
+  font-weight: bold;
+  font-size: 2.9rem;
+  letter-spacing: 0.3rem;
+}
+
+.startButton{
+  margin-top: 15px;
+  width: 160px;
+  height: 50px;
+  background-image: url(../image/startButton.png);
+  background-position: center;
+  background-size:contain ;
+  background-repeat: no-repeat;
+
+}
+
+.startButton:hover{
+ width: 170px;
+ transition: 0.1s;
+ filter: brightness(80%);
+}

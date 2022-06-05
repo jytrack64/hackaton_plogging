@@ -11,6 +11,7 @@ import Profile from './component/Profile';
 import DetailFestival from "./component/DetailFestival";
 import './Scroll.css'
 import './styles/fonts/font.css'
+import Running from './component/Running';
 
 export default function App() {
 
@@ -51,21 +52,10 @@ export default function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route
-              path="/event"
-              element={
-                <Festival
-                  setCategory={setCategory}
-                  category={category}
-                  data={data}
-                />
-              }
-            />
+            <Route path="/event"element={ <FestivalsetCategory={setCategory}category={category} data={data}/>} />
             <Route path="/profile" element={<Profile />} />
-            <Route
-              path="/detail/:id"
-              element={<DetailFestival data={data} />}
-            />
+            <Route path="/detail/:id" element={<DetailFestival data={data} />}/>
+            <Route path='running' element={<Running/>}/>
           </Routes>
         </BrowserRouter>
       </div>
