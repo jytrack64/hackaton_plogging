@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap'
 import Location from "./Location";
 import Banner from "./Banner";
 import FestivalCard from "./FestivalCard";
-import '../../Scroll.css'
+import '../../css/Scroll.css'
 
 const Festival = (props) => {
   const [post, setPost] = useState([]);

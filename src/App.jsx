@@ -9,7 +9,7 @@ import Main from './component/main/Main';
 import Festival from './component/festival/Festival';
 import Profile from './component/profile/Profile';
 import DetailFestival from "./component/festival/DetailFestival";
-import './Scroll.css'
+import './css/Scroll.css'
 import './styles/fonts/font.css'
 import Running from './component/running/Running';
 import Writing from "./component/profile/Writing"
