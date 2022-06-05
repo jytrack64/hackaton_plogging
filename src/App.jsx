@@ -2,30 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
  import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import Badge from "react-bootstrap/Badge";
-import Bottombar from "./component/Bottombar";
-import EventInfo from "./component/EventInfo";
+  import EventInfo from "./component/EventInfo";
+import Profile from "./component/Profile";
+import Writing from "./component/Writing"
+import Comment from "./component/Writing"
+ 
 
-
-function App() {
-    return (
-      <div>
-          <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<EventInfo/>}/>
-            </Routes>
-          </BrowserRouter>
-          <Bottombar/>
-      </div>
-    )
-  }
-  export default App;
-
-import React from 'react';
-import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
-import Bottombar from './component/Bottombar'
-import EventInfo from './component/EventInfo';
-
+ 
 const App = () => {
   return (
     <div style={{width:390, height: 844, border:'1px solid black', margin: '0 auto'}}>
@@ -33,9 +16,15 @@ const App = () => {
         <Routes>
           <Route path='/' element={<EventInfo/>}/>
         </Routes>
+        <Routes>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path="/writing" element={<Writing/>}/>
+          <Route path="/comment" element={<Comment/>}/>
+          <Route path="*" element={ <div>없는페이지입니다</div> } />
+  
+        </Routes>
         </BrowserRouter>
-      <Bottombar/>
-    </div>
+     </div>
   )
 
 }
