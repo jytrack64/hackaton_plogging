@@ -1,22 +1,41 @@
-
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react'
-import { Button, Card } from 'react-bootstrap';
-import axios from 'axios';
+import { Button, Card, Col } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
+import '../FestivalCard.css'
 
-export default function FestivalCard() {
-  const [title, setTitle] = useState(["지구야 사랑해"]);
-  const [date, setDate] = useState(["2022.04.19 ~ 2022.05.13"]);
+export default function FestivalCard({ data }) {
+  const [flag, setFlag] = useState(false);
+  let navigate = useNavigate();
 
+  const handleClick = () => {
+    setFlag(!flag);
+  }
 
   return (
-    <Card style={{ width: '20vw' }}>
-      <Card.Img variant="top" src="./img.jpg" />
-      <Card.Body>
-        <Card.Text style={{ fontSize: '1vw' }}>{date[0]}</Card.Text>
-        <Card.Title>{title[0]}</Card.Title>
-        <br/>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <Col style={{padding: 0}}>
+      <Card className="cardContainer">
+        <Card.Img variant="top" className="cardImg" src={`${data.image}`}
+          onError={(e) => e.target.src="/alter.png"}
+          onClick={() => {navigate(`/detail/${data.id - 1}`);}}
+          style={{cursor: "pointer"}}
+        />
+        <Card.Body>
+          <Card.Title className="cardTitle" 
+            onClick={() => {
+              navigate(`/detail/${data.id - 1}`);
+            }}
+            style={{fontFamily: "SCDream7", cursor: "pointer"}}
+          >
+            {data.title}
+          </Card.Title>
+          <Card.Subtitle className="cardDate" style={{fontFamily: "SCDream4"}}>{data.date}</Card.Subtitle>
+          <br/>
+          <button className="cardBtn" onClick={()=>{handleClick()}}>
+            <img src={flag ? "/clicklike.png" : "/like.png"} style={{width: 20, userSelect: "none"}} alt="likeBtn"/>
+          </button>
+        </Card.Body>
+      </Card>
+    </Col>
   )
 }
