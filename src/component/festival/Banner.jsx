@@ -2,11 +2,11 @@ import React from 'react'
 import {Carousel}  from 'react-bootstrap';
 import { useState } from 'react'
 import { useNavigate } from 'react-router';
- 
+
 function Banner() {
 
   let navigate = useNavigate();
- 
+
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -47,7 +47,6 @@ function Banner() {
           <h3  onClick={() => {
             navigate("info/1")
           }} style={{ fontFamily: "GmarketSansBold", fontStyle: "italic", fontSize:"30px", color: "white" }}>제로 웨이스트 하기</h3>
-         
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ width: "100%", height: "auto" }}>

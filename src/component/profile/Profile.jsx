@@ -8,7 +8,7 @@ import ToggleButton from 'react-bootstrap/ToggleButton'
 import Nav from 'react-bootstrap/Nav'
 import { Container, Row, Col } from 'react-bootstrap';
 import ProgressBar from 'react-bootstrap/ProgressBar'
-import profile from '../../css/Profile.css' 
+import '../../css/Profile.css' 
 import Writing from './Writing';  
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
@@ -33,8 +33,7 @@ export default function Profile () {
 		
  		<div className="profile">
  
- 		  <div style={{backgroundColor:"#79e39b"}} className="profileTop">
-					<h3 >Profile</h3>
+ 		  <div style={{backgroundColor:"#49e594"}} className="profileTop">
 					<div  className="profileUser">
  					  <div className="profileUserImg" >
 						 <img src={userImage}/>
@@ -87,7 +86,7 @@ function Logout() {
 	   <li onClick={() => setLgShow(true)} >
 					   <span style={{marginRight:"20px"}}><img style={{width:"25px"}} src="arrow-right-from-bracket-solid.svg"/></span>
 					   <span style={{
-						   fontSize:"18px", fontFamily:"cursive",
+						   fontSize:"18px", fontFamily:"SCDream4",
 						    fontWeight:"500", lineHeight:"1.2em"}}>
 								로그아웃</span></li>
  	 	<Modal
@@ -236,7 +235,7 @@ function Distance() {
 	  <li onClick={() => setLgShow(true)} >
 					  <span style={{marginRight:"20px"}}><img style={{width:"25px"}} src="./route-solid.svg"/></span>
 					  <span style={{
-						  fontSize:"18px", fontFamily:"cursive",
+						  fontSize:"18px", fontFamily:"SCDream4",
 						   fontWeight:"500", lineHeight:"1.2em"}}>
 							   플로깅 한 거리</span></li>
 		 <Modal
@@ -303,7 +302,7 @@ function Wastes() {
 	  <li onClick={() => setLgShow(true)} >
 					  <span style={{marginRight:"20px"}}><img style={{width:"25px"}} src="./recycle-solid.svg"/></span>
 					  <span style={{
-						  fontSize:"18px", fontFamily:"cursive",
+						  fontSize:"18px", fontFamily:"SCDream4",
 						   fontWeight:"500", lineHeight:"1.2em"}}>
 							  주운 쓰레기 양</span></li>
 		 <Modal

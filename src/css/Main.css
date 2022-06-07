@@ -2,7 +2,6 @@
 .main{
   display: flex;
   background-image: url(../image/mainImg.png);
-  border: 2px solid black;
   background-position: center;
   background-size: cover;
   align-items: center;
@@ -31,7 +30,7 @@
   background-position: center;
   background-size:contain ;
   background-repeat: no-repeat;
-
+  cursor: pointer;
 }
 
 .startButton:hover{
