@@ -11,10 +11,10 @@ const Location = (props) => {
   })
 
   return (
-    <div style={{margin: "0 0 10px 10px"}}>
+    <div className="badgeContainer">
       {
         locateObj.map((item) =>
-          <Badge 
+          <Badge className="badge"
             className={props.category === item.elem ? "active" : null} 
             pill bg="dark" type="button" 
             style={{marginRight: 5, fontFamily: "SCDream4", fontWeight: "100"}} key={item.id}

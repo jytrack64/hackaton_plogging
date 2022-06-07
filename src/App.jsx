@@ -16,6 +16,9 @@ import Writing from "./component/profile/Writing"
 import Comment from "./component/profile/Writing"
 import "./index.css";
 
+import { Container, Row, Col } from "react-bootstrap";
+// Grid
+
 export default function App() {
 
   const [loading, setLoading] = useState(false);
@@ -49,24 +52,24 @@ export default function App() {
   if (error) return <div>에러가 발생했습니다</div>;
   if (!data) return null;
   return (
-    <>
-      <Menubar />
-      <div className="temp">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/event" element={ <Festival setCategory={setCategory}category={category} data={data}/>} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/detail/:id" element={<DetailFestival data={data} />}/>
-            <Route path='running' element={<Running/>}/>
-            <Route path="/writing" element={<Writing/>}/>
-            <Route path='/running' element={<Running/>}/>
-            <Route path="/comment" element={<Comment/>}/>
-            <Route path="*" element={ <div>없는페이지입니다</div> } />
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </>
+    <Container>
+      <Row>
+         <Menubar />
+             <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/event" element={ <Festival setCategory={setCategory}category={category} data={data}/>} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/detail/:id" element={<DetailFestival data={data} />}/>
+                <Route path='running' element={<Running/>}/>
+                <Route path="/writing" element={<Writing/>}/>
+                <Route path='/running' element={<Running/>}/>
+                <Route path="/comment" element={<Comment/>}/>
+                <Route path="*" element={ <div>없는페이지입니다</div> } />
+              </Routes>
+            </BrowserRouter>
+          </Row>
+      </Container>
   );
 }
 

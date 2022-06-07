@@ -14,8 +14,8 @@ function Banner() {
   };
 
   return (
-    <Carousel
-      style={{ width: "100%", height: "auto", marginBottom: 20}}
+    <Carousel className="slider"
+      
       activeIndex={index}
       onSelect={handleSelect}
     >
@@ -24,43 +24,42 @@ function Banner() {
         style={{ width: "100%", height: "auto" }}
       >
         <img
-          style={{ height: "200px" }}
-          className="d-block w-100"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStG9pg_tYgirwkUvWthAM4kg1bMonGtmfzdQ&usqp=CAU"
+           className="d-block w-100"
+          src="https://www.youth.go.kr/youth/cmm/imgView/imgView.do?atchmnflId=00000000000006827119"
           alt="First slide"
         />
         <Carousel.Caption>
           <h3 onClick={() => {
             navigate("info/0")
-          }} style={{ fontFamily: "GmarketSansBold", fontStyle: "italic", fontSize:"25px", fontWeight:"600", color: "white" }}>재활용 쓰레기 올바른 분리배출 방법</h3>
+          }}  >제로 웨이스트 하기</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ width: "100%", height: "auto" }}>
         <img
-          style={{ height: "200px" }}
+          
           className="d-block w-100"
-          src="https://thumbs.dreamstime.com/b/biodegradable-paper-eco-straws-zero-waste-yellow-background-top-view-copy-space-text-222877205.jpg"
+          src="https://tcocertified.com/wp-content/uploads/2019/10/international-e-waste-day.jpg"
           alt="Second slide"
         />
 
         <Carousel.Caption>
           <h3  onClick={() => {
             navigate("info/1")
-          }} style={{ fontFamily: "GmarketSansBold", fontStyle: "italic", fontSize:"30px", color: "white" }}>제로 웨이스트 하기</h3>
+          }}  >올바른 재활용 쓰레기 배출 방법</h3>
          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ width: "100%", height: "auto" }}>
         <img
-          style={{ height: "200px" }}
+     
           className="d-block w-100"
-          src="https://see.news/wp-content/uploads/2020/07/Ocean-plastic-waste-Large.jpg"
+          src="https://i.ytimg.com/vi/f3mcjmKcGeo/maxresdefault.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>
           <h3  onClick={() => {
             navigate("info/2")
-          }} style={{ fontFamily: "GmarketSansBold", fontStyle: "italic", fontSize:"25px", fontWeight:"900", color: "white" }}>생활 속 쓰레기 줄이기</h3>
+          }}  >생활 속 쓰레기 줄이기</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
