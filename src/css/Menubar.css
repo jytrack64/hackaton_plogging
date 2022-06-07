@@ -1,8 +1,9 @@
 .menubar {
   width: 100%;
-  background-color: #49e594;
+  position:fixed;
+  z-index: 10;
   font-weight: bold;
-  height: 55px;
+  height: 100px;
   top: 0;
   font-family: "GmarketSansBold";
 }

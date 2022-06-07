@@ -2,19 +2,33 @@
   display: flex;
 
   background-image: url(../image/mainBgImg.png);
-  background-position: center top 150px;
-  background-size: cover;
+  background-position: center top 100px;
+  background-size: contain;
   align-items: center;
-  height: 1500px;
+  height: 3080px;
   flex-direction: column;
   background-repeat: no-repeat;
 }
 
+.mainBox{
+  display: flex;
+  width: auto;
+  height : 500px; 
+}
+
 .mainInfo_text{
   display: flex;
-  margin-top: 80px;
+  margin-top: 140px;
   text-align: center;
   font-family: 'GmarketSansMedium';
+  font-size: 1.5rem;
+}
+
+.main_festivalInfo{
+  display: flex;
+  width: 450px;
+  height: 450px;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -25,32 +39,83 @@
 
 /* 768px까지 main2 안보이게 데탑 사이즈되면 자동으로 보임 */
 
-.headline {
+.headline1{
   display: flex;
-  margin-top: 160px;
+  margin-top: 120px;
+}
+
+.headline2{
+  display: flex;
+  margin-top: 270px;
+
 }
 
 .headline_text {
   color: white;
   font-weight: bold;
-  font-size: 2.9rem;
+  font-size: 3.5rem;
   letter-spacing: 0.3rem;
   font-family: "GmarketSansBold";
 }
 
 .startButton {
+  display: flex;
   margin-top: 15px;
   width: 160px;
   height: 50px;
-  background-image: url(../image/startButton.png);
+  background-image: url(../image/mainButton.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+
 }
+.eventButton {
+  display: flex;
+  margin-top: 15px;
+  width: 160px;
+  height: 50px;
+  background-image: url(../image/mainButton.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+
+}
+
+.eventButtonText{
+display: flex;
+font-family: 'GmarketSansMedium';
+color: white;
+letter-spacing: 0.3rem;
+
+}
+
+.startButtonText{
+  display: flex;
+  font-family: 'GmarketSansMedium';
+  color: white;
+  letter-spacing: 0.3rem;
+  
+  }
 
 .startButton:hover {
   width: 170px;
   transition: 0.1s;
+  font-size: 1.2rem;
+
+  filter: brightness(80%);
+}
+.eventButton:hover {
+  width: 170px;
+  transition: 0.1s;
+  font-size: 1.2rem;
+
   filter: brightness(80%);
 }

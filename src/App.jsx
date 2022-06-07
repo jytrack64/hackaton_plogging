@@ -59,10 +59,10 @@ export default function App() {
       <div className="temp" >
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Main data={data} />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/event" element={ <Festival setCategory={setCategory}category={category} data={data}/>} />
+            <Route path="/event" element={ <Festival setCategory={setCategory} category={category} data={data}/>} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/detail/:id" element={<DetailFestival data={data} />}/>
             <Route path='running' element={<Running/>}/>

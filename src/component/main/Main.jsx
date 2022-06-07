@@ -1,19 +1,30 @@
-import React,{useRef,useEffect} from 'react'
+import React,{useRef,useEffect,useState} from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import '../../css/Main.css'
 import MainSlider from '../slider/MainSlider'
 
 import {gsap} from 'gsap'
 import { useNavigate } from 'react-router-dom'
+import FestivalCard from '../festival/FestivalCard'
 
 
 
-
-function Main() {
+function Main(props) {
   let headlineText = useRef(null);
   let startButton = useRef(null);
+  let eventButton = useRef(null);
 
   const navigate = useNavigate();
+
+  const [post, setPost] = useState([]);
+
+  const FilterCard = () => {
+    return props.data;
+  }
+
+  useEffect(()=> {
+    setPost([...FilterCard()]);
+  },[props.category])
 
   useEffect(() => {
     gsap.to(
@@ -36,8 +47,11 @@ function Main() {
     )
   }, [])
   
-  function handleClick(){
+  function handleStartClick(){
     navigate('/running');
+  }
+  function handleEventClick(){
+    navigate('/event');
   }
 
 
@@ -48,6 +62,8 @@ function Main() {
         <Col xs={12} lg={6}>
     <div className='main'>
       <MainSlider/>
+
+      <div className='mainBox'>
       <div className='mainInfo_text'>
         <span>저희 줍고는 <span style={{color:'#49e594',fontWeight:'bold'}}>플로깅 사용자</span>를 위한 서비스에요
           <br/><br/>
@@ -57,24 +73,54 @@ function Main() {
           <br/>
           <span style={{fontWeight:'bold'}}>전부 도와드릴게요 😊</span></span>
       </div>
-      <div className='headline'>
+      </div>
+
+
+    <div className='mainBox' style={{height:'325px'}}>
+      <div className='headline1'>
+        <h3 className='headline_text'>
+          <span style={{color:'#49e594'}}>참여</span>가능한<br/>
+          <span style={{color:'#49e594'}}>플로깅행사</span>
+        </h3>
+      </div>
+    </div>
+
+      <div className='main_festivalInfo' >
+      {post.map((item, i) => i==0 ? <div style={{width:'500px',height:'430px'}}><FestivalCard data={item}  i={i} key={item.id} /></div> : null)}
+      </div>
+
+      <div className='eventButton'
+      onClick={handleEventClick}
+      ref={el=>{eventButton=el}}>
+               <span className='eventButtonText'>더보러가기</span> 
+      </div>
+
+        <div className='headline2'>
+          <h3 className='headline_text'
+              ref={el=>{headlineText=el}}
+          ><span style={{color:'#49e594'}}>지구</span>와함께<br/>
+          <span style={{color:'#49e594'}}>건강해지기</span>
+          </h3>
+        </div>
+      <div className='startButton'
+        onClick={handleStartClick}
+        ref={el=>{startButton=el}}>
+               <span className='startButtonText'>달리러가기</span> 
+
+      </div>
+      </div>
+
+
+      </Col>
+      <Col xs={12} lg={6}>
+      <div className='main main2'>
+      <div className='headline1'>
         <h3 className='headline_text'>
         <span style={{color:'#49e594'}}>참여</span>가능한<br/>
         <span style={{color:'#49e594'}}>플로깅행사</span>
           </h3>
           </div>
-      <div className='headline'>
-        <h3 className='headline_text'
-            ref={el=>{headlineText=el}}
-        ><span style={{color:'#49e594'}}>지구</span>와함께<br/>
-        <span style={{color:'#49e594'}}>건강해지기</span>
-        </h3>
-      </div>
-      </div>
-      </Col>
-      <Col xs={12} lg={6}>
-      <div className='main main2'>
-        <div className='headline'>
+        <div className='headline2'>
           <h3 className='headline_text'
               ref={el=>{headlineText=el}}
           ><span style={{color:'#49e594'}}>지구</span>와함께<br/>
@@ -82,7 +128,7 @@ function Main() {
           </h3>
         </div>
         <div className='startButton' 
-        onClick={handleClick}
+        onClick={handleStartClick}
         ref={el=>{startButton=el}}
         >
       </div>
