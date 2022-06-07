@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 
+
 function Running() {
 
   useEffect(() => {
@@ -32,6 +33,7 @@ function Running() {
     />
   </div>
   )
+
 }
 
 export default Running;

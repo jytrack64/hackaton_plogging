@@ -5,6 +5,7 @@ import mainSlider2 from '../../image/mainSlider2.png'
 import mainSlider3 from '../../image/mainSlider3.png'
 
 
+
 function MainSlider() {
   return (
     <Carousel>
