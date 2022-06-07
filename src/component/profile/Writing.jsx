@@ -16,8 +16,6 @@ import { Navigate, useNavigate } from "react-router";
 
   return (
  
-
-
     <div className="profile" >
 
         <div style={{backgroundColor:"#79e39b", marginBottom:"10px"}} className="profileTop">
