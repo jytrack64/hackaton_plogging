@@ -9,6 +9,10 @@
   font-family: 'GmarketSansBold';
 }
 
+*:focus {
+  outline: 0;
+}
+
 .menubar_icons {
   margin: auto auto;
 }

@@ -1,12 +1,21 @@
 
 .main{
   display: flex;
-  background-image: url(../image/mainImg.png);
-  background-position: center;
+
+  background-image: url(../image/mainBgImg.png);
+  background-position: center top 150px;
   background-size: cover;
   align-items: center;
-  height: 789px;
+  height: 1500px;
   flex-direction: column;
+  background-repeat: no-repeat;
+}
+
+.mainInfo_text{
+  display: flex;
+  margin-top: 80px;
+  text-align: center;
+  font-family: 'GmarketSansMedium';
 }
 
 .headline{
