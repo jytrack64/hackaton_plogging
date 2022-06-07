@@ -36,11 +36,12 @@ export default function Menubar() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-            <Navbar.Brand className='menubar_name1' href="/main">줍고</Navbar.Brand>
+            <Navbar.Brand className='menubar_name1' href="/">줍고</Navbar.Brand>
               <Nav className="justify-content-start flex-grow-1 pe-3">
                 <Nav.Link href="/">메인화면</Nav.Link>
                 <Nav.Link href="/running">달리기</Nav.Link>
                 <Nav.Link href="/event">행사목록</Nav.Link>
+                <Nav.Link href="/login">로그인</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

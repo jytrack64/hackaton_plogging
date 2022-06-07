@@ -1,8 +1,5 @@
 /* App.js */
 .temp {
-  width: 390px;
-  height: 789px;
-  margin: 0 auto; 
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -39,5 +36,7 @@
 }
 .scrollend {
   opacity: 0;
-  transition: ease-in opacity 1.5s;
+  /* transform: translateY(30px); */
+  transition: ease-in 1.5s;
+  /* transition: 1.5s; */
 }

@@ -1,16 +1,9 @@
 /* mobileSize */
 
 /* profileTop */
-
-.profileTop > h3 {
-  padding: 20px;
-  font-size: 23px;
-  font-weight: 700;
-}
-
 .profileUser {
   position: relative;
-  padding: 10px 0 42px 0;
+  padding: 70px 0 42px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +74,7 @@
 
 .profileLists li span:last-child {
   font-size: 18px;
-  font-family: cursive;
+  font-family:"SCDream4";
   font-weight: 500;
   line-height: 1.2em;
   cursor: pointer;
@@ -103,7 +96,7 @@
 .editNameButton {
   width: 50px;
   height: 25px;
-  fontsize: 13px;
+  font-size: 13px;
   border: none;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.011);

@@ -1,6 +1,7 @@
 
 .main{
   display: flex;
+
   background-image: url(../image/mainBgImg.png);
   background-position: center top 150px;
   background-size: cover;

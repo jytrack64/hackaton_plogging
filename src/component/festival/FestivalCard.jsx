@@ -16,7 +16,7 @@ export default function FestivalCard({ data }) {
     <Col style={{padding: 0}}>
       <Card className="cardContainer">
         <Card.Img variant="top" className="cardImg" src={`${data.image}`}
-          onError={(e) => e.target.src="/alter.png"}
+          onError={(e) => e.target.src="/noimage.png"}
           onClick={() => {navigate(`/detail/${data.id - 1}`);}}
           style={{cursor: "pointer"}}
         />
