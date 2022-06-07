@@ -18,6 +18,9 @@ import './css/Scroll.css'
 import './styles/fonts/font.css'
 import "./index.css";
 
+import { Container, Row, Col } from "react-bootstrap";
+// Grid
+
 export default function App() {
 
   const [loading, setLoading] = useState(false);

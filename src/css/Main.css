@@ -1,5 +1,4 @@
-
-.main{
+.main {
   display: flex;
 
   background-image: url(../image/mainBgImg.png);
@@ -18,32 +17,40 @@
   font-family: 'GmarketSansMedium';
 }
 
-.headline{
+@media screen and (max-width: 768px) {
+  .main2 {
+    display: none;
+  }
+}
+
+/* 768px까지 main2 안보이게 데탑 사이즈되면 자동으로 보임 */
+
+.headline {
   display: flex;
   margin-top: 160px;
 }
 
-.headline_text{
-  color:white;
+.headline_text {
+  color: white;
   font-weight: bold;
   font-size: 2.9rem;
   letter-spacing: 0.3rem;
-  font-family: 'GmarketSansBold';
+  font-family: "GmarketSansBold";
 }
 
-.startButton{
+.startButton {
   margin-top: 15px;
   width: 160px;
   height: 50px;
   background-image: url(../image/startButton.png);
   background-position: center;
-  background-size:contain ;
+  background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-.startButton:hover{
- width: 170px;
- transition: 0.1s;
- filter: brightness(80%);
+.startButton:hover {
+  width: 170px;
+  transition: 0.1s;
+  filter: brightness(80%);
 }

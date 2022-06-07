@@ -1,5 +1,8 @@
 /* App.js */
 .temp {
+  height: 789px;
+  border: 1px solid red;
+  margin: 0 auto;
   display: flex;
   align-content: center;
   flex-direction: column;

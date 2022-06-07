@@ -13,7 +13,7 @@ export default function FestivalCard({ data }) {
   }
 
   return (
-    <Col style={{padding: 0}}>
+    <Col className="cardGrid" md={6} lg={3} style={{padding:"px"}}>
       <Card className="cardContainer">
         <Card.Img variant="top" className="cardImg" src={`${data.image}`}
           onError={(e) => e.target.src="/noimage.png"}

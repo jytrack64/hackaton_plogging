@@ -4,7 +4,6 @@
 
 .container {
   border: 3px solid blue;
-  width: 390px;
   height: 844px;
 }
 
@@ -52,8 +51,9 @@ li {
 }
 
 @font-face {
-  font-family: 'GmarketSansBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }

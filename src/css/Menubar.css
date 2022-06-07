@@ -1,12 +1,10 @@
 .menubar {
+  width: 100%;
   background-color: #49e594;
   font-weight: bold;
-  justify-content: center;
-  width: 390px;
   height: 55px;
   top: 0;
-  margin: auto auto;
-  font-family: 'GmarketSansBold';
+  font-family: "GmarketSansBold";
 }
 
 *:focus {
@@ -17,18 +15,24 @@
   margin: auto auto;
 }
 
-@media screen and (min-width: 990px){
-    .menubar_name2{
-    display:none;
-    }
+@media screen and (min-width: 768px) {
+  .startButton {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 990px){
-    .menubar_name1{
-    display:none;
-    }
+@media screen and (min-width: 990px) {
+  .menubar_name2 {
+    display: none;
+  }
 }
 
-.menubar_profile{
-  font-size : 5px;
+@media screen and (max-width: 990px) {
+  .menubar_name1 {
+    display: none;
+  }
+}
+
+.menubar_profile {
+  font-size: 5px;
 }

@@ -19,7 +19,7 @@ import axios from 'axios';
 // 프로필 페이지
 
 export default function Profile () {
-
+ 
 	let navigate = useNavigate();
 	let [userName, nameChange] = useState(["손흥민"]);
 	// 임시 유저 네임 데이터
@@ -30,24 +30,25 @@ export default function Profile () {
 
     return (
 
-		
- 		<div className="profile">
- 
- 		  <div style={{backgroundColor:"#49e594"}} className="profileTop">
+		<Container>
+		 <Row>
+          <Col  >
+ 		  <div style={{backgroundColor:"#79e39b"}} className="profileTop">
+					<h3 >Profile</h3>
 					<div  className="profileUser">
  					  <div className="profileUserImg" >
 						 <img src={userImage}/>
 					  </div>		  
 						 <h4 className="userName" >{userName}</h4>
 						<span className="userMail">email12345@gmail.com</span>
-						<div className="penBox">
-							<img className="pen" src="./file-pen-solid.svg"/>
-						</div>
+					 
 					</div>
 			
 		 
 		   </div>	
-					<main className="profileBottom">
+		   </Col>			
+ 
+			 <div  className="profileBottom">
 							<ul className="profileLists">
 						    <Edit userImage={userImage} userName={userName} nameChange={nameChange}/>		
 							
@@ -62,13 +63,12 @@ export default function Profile () {
 							<Wastes/>
 							<Logout/>
 							</ul>
-						</main>
-						
-		 
+			 </div>
+ 	
+		 </Row> 	
  
-
-		</div>
-	 
+		  </Container>
+ 	 
        
     )
 }	
@@ -320,62 +320,63 @@ function Wastes() {
 		
 		 <Container >
 			<Row>
-				<Col md={6} >
+				<Col md={12}   >
+				 
 				<div className="icons" style={{textAlign:"center", border:"none"}} >	
-					 <img style={{width:"150px", }} src="https://popedouglasrecycle.com/wp-content/uploads/2021/02/pope.png"/>
+					 <img style={{width:"80%", }} src="https://popedouglasrecycle.com/wp-content/uploads/2021/02/pope.png"/>
 					 <span style={{fontSize:"16px", fontWeight:"200"}}>"버린 쓰레기 총합"</span>
 	
 				 <div style={{display:"flex", alignItems:"center"}}>
 					<span style={{fontSize:"22px", fontWeight:"600", marginRight:"3px"}}>1500</span><span style={{fontSize:"13px"}}>개</span>
 				 </div>
 				</div>
- 					<div className="icons" style={{marginBottom:"10px"}}>
-					 
-					  <div className="icon">	
-					    <h6>플라스틱</h6>
-						<img src="./wasteicon/plastic.png"/>
-						<div className="iconsText">
-							<span>500</span>
-							<span>개</span>
-						</div>
-					  </div>	
-					  <div className="icon">	
-					    <h6>병</h6>
-						<img src="./wasteicon/wine.png"/>
-						<div className="iconsText">
-							<span>500</span>
-							<span>개</span>
-						</div>
-						
-					  </div>	
-					  <div className="icon">	
-					    <h6>종이</h6>
-						<img src="./wasteicon/paper-bin.png"/>
-						<div className="iconsText">
-							<span>500</span>
-							<span>개</span>
-						</div>
-					  </div>	
-					  <div className="icon">	
-					    <h6>고철</h6>
-						<img src="./wasteicon/pipes.png"/>
-						<div className="iconsText">
-							<span>500</span>
-							<span>개</span>
-						</div>
-					  </div>
-					  <div className="icon">	
-					    <h6>일반 쓰레기</h6>
-						<img src="./wasteicon/plastic-bag.png"/>
-						<div className="iconsText">
-							<span>500</span>
-							<span>개</span>
-						</div>
-					  </div>
+				</Col>
+ 				<div className="icons" style={{marginBottom:"10px"}}>
+					
+					<div className="icon">	
+					<h6>플라스틱</h6>
+					<img src="./wasteicon/plastic.png"/>
+					<div className="iconsText">
+						<span>500</span>
+						<span>개</span>
 					</div>
+					</div>	
+					<div className="icon">	
+					<h6>병</h6>
+					<img src="./wasteicon/wine.png"/>
+					<div className="iconsText">
+						<span>500</span>
+						<span>개</span>
+					</div>
+					
+					</div>	
+					<div className="icon">	
+					<h6>종이</h6>
+					<img src="./wasteicon/paper-bin.png"/>
+					<div className="iconsText">
+						<span>500</span>
+						<span>개</span>
+					</div>
+					</div>	
+					<div className="icon">	
+					<h6>고철</h6>
+					<img src="./wasteicon/pipes.png"/>
+					<div className="iconsText">
+						<span>500</span>
+						<span>개</span>
+					</div>
+					</div>
+					<div className="icon">	
+					<h6>일반 쓰레기</h6>
+					<img src="./wasteicon/plastic-bag.png"/>
+					<div className="iconsText">
+						<span>500</span>
+						<span>개</span>
+					</div>
+					</div>
+				</div>
+				
 
-
- 				</Col>
 				 
 				
 			
