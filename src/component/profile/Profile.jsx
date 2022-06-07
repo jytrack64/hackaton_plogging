@@ -34,7 +34,7 @@ export default function Profile () {
 		 <Row>
           <Col  >
  		  <div style={{backgroundColor:"#79e39b"}} className="profileTop">
-					<h3 >Profile</h3>
+	
 					<div  className="profileUser">
  					  <div className="profileUserImg" >
 						 <img src={userImage}/>

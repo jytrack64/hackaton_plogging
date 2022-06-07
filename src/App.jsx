@@ -56,12 +56,7 @@ export default function App() {
   return (
     <>
       <Menubar />
-      <div className="temp" style={{
-        width: 390,
-        height: 789,
-        border: "1px solid black",
-        margin: "0 auto"
-      }}>
+      <div className="temp" >
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main />} />

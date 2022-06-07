@@ -43,6 +43,9 @@ function Main() {
 
 
   return (
+    <Container>
+      <Row>
+        <Col xs={12} lg={6}>
     <div className='main'>
       <MainSlider/>
       <div className='mainInfo_text'>
