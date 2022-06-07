@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Running() {
   return (
-    <div>Running</div>
-  )
+    <>
+      <div>Running</div>
+    </>
+  );
 }
 
 export default Running;
