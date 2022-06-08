@@ -1,0 +1,143 @@
+/* .running{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 2px solid greenyellow;
+
+} */
+
+
+
+.running_topBar{
+  display: flex;
+  position: fixed;
+  top: 120px;
+  width: 80vw;
+  height: 70px;
+  z-index: 2;
+}
+
+.running_topBar_searchBar{
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 5;
+  background-image: url('../image/locationSearchImg.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.running_topBar_searchBar_Img{
+  flex-grow: 5;
+  background-image: url('../image/serchBarFlagImg.png');
+  background-size: 28px 28px;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.running_topBar_searchBar_text{
+  display: flex;
+  flex-grow: 4;
+  font-family: 'GmarketSansBold';
+  font-size: 1.5rem;
+  align-items: center;
+  color: #A6A6A6;
+
+}
+
+.running_topBar_searchBar_empty{
+  flex-grow: 5;
+
+}
+
+.running_topBar_empty{
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 0.5;
+}
+
+.running_topBar_trashCan{
+  display: flex;
+  flex-basis: 0;
+
+  flex-grow: 1;
+  background-image: url('../image/trashCanButtonImg.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+}
+
+.running_bottomBar_add{
+  display: flex;
+  position: fixed;
+
+  right: 7vw;
+  bottom:170px;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+
+
+  background-image: url('../image/myLocBtn.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+}
+
+.running_bottomBar{
+  display: flex;
+  position: fixed;
+
+  bottom:0;
+  width:80vw;
+  
+  height: 172px;
+  z-index: 2;
+
+}
+
+
+.running_bottomBar_first{
+  flex-grow: 1;
+  flex-basis: 0;
+
+  background-image: url('../image/routeSettingBtn.png');
+  background-size: 75px 75px;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+}
+.running_bottomBar_second{
+  flex-grow: 1;
+  flex-basis: 0;
+
+
+  background-image: url('../image/startBtn.png');
+  background-size: 110px 110px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+}
+.running_bottomBar_third{
+  flex-grow: 1;
+  flex-basis: 0;
+
+
+  background-image: url('../image/endPointBtn.png');
+  background-size: 75px 75px;
+  background-position: center left;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+}
