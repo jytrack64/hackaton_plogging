@@ -23,7 +23,7 @@ export default function Menubar() {
        <Navbar key={expand} style={{background:'rgba(255,255,255,0.5)'}} expand='lg' className="menubar">
         <Container fluid>
 
-          <Navbar.Toggle  aria-controls={`offcanvasNavbar-expand-${expand}`} />
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
