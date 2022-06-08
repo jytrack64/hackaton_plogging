@@ -1,15 +1,16 @@
-import React from 'react';
-import {Map} from 'react-kakao-maps-sdk';
+
+import React,{ useState } from 'react'
+import { Map } from "react-kakao-maps-sdk";
 import '../../css/Running.css';
 import {Container,Row,Col} from 'react-bootstrap'
+import TrashMarker from './TrashMarker';
 
 function Running() {
-
-
+  const [flag, setFlag] = useState(true);
 
   return (
     <>
-      <Map
+      <Map // 지도를 표시할 Container
       center={{
         // 지도의 중심좌표
         lat: 37.49632346686845,
@@ -22,7 +23,9 @@ function Running() {
         zIndex: '1'
       }}
       level={3} // 지도의 확대 레벨
-      />
+      >
+      <TrashMarker flag={flag}/>
+      </Map>
           <Container>
         <Row>
           <Col xs={12} md={12} lg={12}>
@@ -36,7 +39,7 @@ function Running() {
           <div className='running_topBar_empty'>
 
           </div>
-          <div className='running_topBar_trashCan'>
+          <div className='running_topBar_trashCan' onClick={() => {setFlag(!flag)}}>
 
           </div>
         </div>
@@ -62,7 +65,6 @@ function Running() {
       </Container>
     </>
   );
-
 }
 
 export default Running;
