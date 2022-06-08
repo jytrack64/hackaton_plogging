@@ -1,28 +1,27 @@
 import ReactDOM from "react-dom/client";
-import React, { useEffect, useState } from 'react'
-import {BrowserRouter, Route, Routes, Link} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
 
-import Menubar from './component/Menubar'
-import Main from './component/main/Main';
-import Login from './component/user/Login';
-import Register from './component/user/Register';
-import Festival from './component/festival/Festival';
-import Profile from './component/profile/Profile';
+import Menubar from "./component/Menubar";
+import Main from "./component/main/Main";
+import Login from "./component/user/Login";
+import Register from "./component/user/Register";
+import Festival from "./component/festival/Festival";
+import Profile from "./component/profile/Profile";
 import DetailFestival from "./component/festival/DetailFestival";
-import Running from './component/running/Running';
-import Writing from "./component/profile/Writing"
-import Comment from "./component/profile/Writing"
-import './css/Scroll.css'
-import './styles/fonts/font.css'
+import Running from "./component/running/Running";
+import Writing from "./component/profile/Writing";
+import Comment from "./component/profile/Writing";
+import "./css/Scroll.css";
+import "./styles/fonts/font.css";
 import "./index.css";
 
 import { Container, Row, Col } from "react-bootstrap";
 // Grid
 
 export default function App() {
-
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -56,25 +55,35 @@ export default function App() {
   return (
     <>
       <Menubar />
-      <div className="temp" >
+      <div className="temp">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main data={data} />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/event" element={ <Festival setCategory={setCategory} category={category} data={data}/>} />
+            <Route
+              path="/event"
+              element={
+                <Festival
+                  setCategory={setCategory}
+                  category={category}
+                  data={data}
+                />
+              }
+            />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/detail/:id" element={<DetailFestival data={data} />}/>
-            <Route path='running' element={<Running/>}/>
-            <Route path="/writing" element={<Writing/>}/>
-            <Route path='/running' element={<Running/>}/>
-            <Route path="/comment" element={<Comment/>}/>
-            <Route path="*" element={ <div>없는페이지입니다</div> } />
+            <Route
+              path="/detail/:id"
+              element={<DetailFestival data={data} />}
+            />
+            <Route path="/running" element={<Running />} />
+            <Route path="/writing" element={<Writing />} />
+            <Route path="/running" element={<Running />} />
+            <Route path="/comment" element={<Comment />} />
+            <Route path="*" element={<div>없는페이지입니다</div>} />
           </Routes>
         </BrowserRouter>
       </div>
     </>
   );
 }
-
-
