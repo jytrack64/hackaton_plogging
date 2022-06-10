@@ -17,7 +17,12 @@ const Location = (props) => {
           <Badge className="badge"
             className={props.category === item.elem ? "active" : null} 
             pill bg="dark" type="button" 
-            style={{marginRight: 5, fontFamily: "SCDream4", fontWeight: "100"}} key={item.id}
+            style={{
+              display: "inline-flex", alignItems: "center",
+              margin: "0 5px 5px 0",
+              fontFamily: "SCDream4", fontWeight: "100"
+            }}
+            key={item.id}
             onClick={() => props.setCategory(item.elem)}
           >
             {item.elem}

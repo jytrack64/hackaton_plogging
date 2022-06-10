@@ -51,13 +51,14 @@ const Festival = (props) => {
           </div>
         </Col>
         <Col md={12} lg={12}>
-          <Container>
-            <Row>
-              {post.length
-                ? post.map((item, i) => (
-                    <FestivalCard data={item} i={i} key={item.id} />
-                  ))
-                : null}
+          <Container >
+            <Row className="row gx-0">
+              {
+                post.length 
+                ? post.map((item, i) => <FestivalCard data={item} i={i} key={item.id} /> )
+                : <div className="dataNone">진행 중인 행사가 없습니다 🥲</div>
+              }
+
             </Row>
           </Container>
         </Col>

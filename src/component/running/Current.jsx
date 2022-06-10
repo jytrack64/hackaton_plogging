@@ -7,7 +7,7 @@ function Current(props) {
       <MapMarker
         position={props.current.center}
         image={{
-          src: "/mylocation.png",
+          src: "/mylocation2.png",
           size: {
             width: 58,
             height: 85,
