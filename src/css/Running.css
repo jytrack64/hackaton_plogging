@@ -243,7 +243,8 @@ justify-content: center;
 .left_button_detail_button_image{
   width: 30px;
   height: 30px;
-  
+}
+
 .endpoint{
   filter:brightness(60%);
 }

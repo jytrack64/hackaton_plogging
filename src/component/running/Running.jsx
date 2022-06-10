@@ -107,6 +107,91 @@ function Running() {
     },1000)
   }
 
+  const LeftButton = () => {
+    return (
+      <>
+        <div className="left_button">
+          <div className="left_button_path">
+            <div className="left_button_path_text">경로</div>
+          </div>
+          <div className="left_button_container">
+            <div className="left_button_detail">
+              <div className="left_button_detail_icon_container">
+                <div className="left_button_detail_icon">
+                  <img
+                    className="left_button_detail_icon_image"
+                    src="/path.png"
+                  />
+                </div>
+                <div className="left_button_detail_text">저장된 경로</div>
+              </div>
+              <div className="left_button_detail_button">
+                <img
+                  className="left_button_detail_button_image"
+                  src="/pathbutton.png"
+                />
+              </div>
+            </div>
+            <div className="left_button_detail">
+              <div className="left_button_detail_icon_container">
+                <div className="left_button_detail_icon">
+                  <img
+                    className="left_button_detail_icon_image"
+                    src="/star.png"
+                  />
+                </div>
+                <div className="left_button_detail_text">별표 표시한 구간</div>
+              </div>
+              <div className="left_button_detail_button">
+                <img
+                  className="left_button_detail_button_image"
+                  src="/pathbutton.png"
+                />
+              </div>
+            </div>
+            <div className="left_button_detail">
+              <div className="left_button_detail_icon_container">
+                <div className="left_button_detail_icon">
+                  <img
+                    className="left_button_detail_icon_image"
+                    src="/history.png"
+                  />
+                </div>
+                <div className="left_button_detail_text">코스기록</div>
+              </div>
+              <div className="left_button_detail_button">
+                <img
+                  className="left_button_detail_button_image"
+                  src="/pathbutton.png"
+                />
+              </div>
+            </div>
+            <div className="left_button_detail">
+              <div className="left_button_detail_icon_container">
+                <div className="left_button_detail_icon">
+                  <img
+                    className="left_button_detail_icon_image"
+                    src="/trophy.png"
+                  />
+                </div>
+                <div className="left_button_detail_text">지역순위</div>
+              </div>
+              <div className="left_button_detail_button">
+                <img
+                  className="left_button_detail_button_image"
+                  src="/pathbutton.png"
+                />
+               </div>
+            </div>
+          </div>
+        </div>
+     </>
+   );
+  }
+
+
+
+
   // 내 위치 불러오기
   useEffect(() => {
     // 현재 위치 찾기 조건문
@@ -248,84 +333,7 @@ function Running() {
               isPanto: true,
             })
           }>
-
-const LeftButton = () => {
-  return (
-    <>
-      <div className="left_button">
-        <div className="left_button_path">
-          <div className="left_button_path_text">경로</div>
         </div>
-        <div className="left_button_container">
-          <div className="left_button_detail">
-            <div className="left_button_detail_icon_container">
-              <div className="left_button_detail_icon">
-                <img
-                  className="left_button_detail_icon_image"
-                  src="/path.png"
-                />
-              </div>
-              <div className="left_button_detail_text">저장된 경로</div>
-            </div>
-            <div className="left_button_detail_button">
-              <img
-                className="left_button_detail_button_image"
-                src="/pathbutton.png"
-              />
-            </div>
-          </div>
-          <div className="left_button_detail">
-            <div className="left_button_detail_icon_container">
-              <div className="left_button_detail_icon">
-                <img
-                  className="left_button_detail_icon_image"
-                  src="/star.png"
-                />
-              </div>
-              <div className="left_button_detail_text">별표 표시한 구간</div>
-            </div>
-            <div className="left_button_detail_button">
-              <img
-                className="left_button_detail_button_image"
-                src="/pathbutton.png"
-              />
-            </div>
-          </div>
-          <div className="left_button_detail">
-            <div className="left_button_detail_icon_container">
-              <div className="left_button_detail_icon">
-                <img
-                  className="left_button_detail_icon_image"
-                  src="/history.png"
-                />
-              </div>
-              <div className="left_button_detail_text">코스기록</div>
-            </div>
-            <div className="left_button_detail_button">
-              <img
-                className="left_button_detail_button_image"
-                src="/pathbutton.png"
-              />
-            </div>
-          </div>
-          <div className="left_button_detail">
-            <div className="left_button_detail_icon_container">
-              <div className="left_button_detail_icon">
-                <img
-                  className="left_button_detail_icon_image"
-                  src="/trophy.png"
-                />
-              </div>
-              <div className="left_button_detail_text">지역순위</div>
-            </div>
-            <div className="left_button_detail_button">
-              <img
-                className="left_button_detail_button_image"
-                src="/pathbutton.png"
-              />
-            </>
-       );
-      }
       
         <div className="running_bottomBarBox">
           <div className='running_bottomBar'>
@@ -335,10 +343,8 @@ const LeftButton = () => {
               ? {backgroundImage : `url(${cameraBtn})`}
               : {backgroundImage : `url(${routeSettingBtn})`} 
             }
-           {start ? null : onClick={() => {
-                    setLeftButton((prev) => !prev);
-                    }}
-                    }
+            onClick={()=>setLeftButton((prev) => !prev)}
+           
             >
                 {start 
                 ? <input 
