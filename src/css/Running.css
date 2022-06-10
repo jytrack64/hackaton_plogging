@@ -303,6 +303,12 @@ display: none;
     letter-spacing: 0.3rem;
   }
   
+  .showOnPc_btn:hover{
+    width: 170px;
+    transition: 0.1s;
+    font-size: 1.2rem;
+    filter: brightness(80%);
+  }
 
 }
 
