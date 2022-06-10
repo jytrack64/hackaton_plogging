@@ -7,7 +7,7 @@ function Current(props) {
       <MapMarker
         position={props.current.center}
         image={{
-          src: "/mylocation.png",
+          src: "/mylocation2.png",
           size: {
             width: 58,
             height: 85,
@@ -20,9 +20,9 @@ function Current(props) {
           },
         }}
       >
-        <div style={{ padding: "5px", color: "#000" }}>
+        {/* <div style={{ padding: "5px", color: "#000" }}>
           {props.current.errMsg ? props.current.errMsg : "당신의 위치"}
-        </div>
+        </div> */}
         {/* 현재 위치 마커  */}
       </MapMarker>
     )

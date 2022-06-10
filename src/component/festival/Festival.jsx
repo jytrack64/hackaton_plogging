@@ -20,7 +20,7 @@ const Festival = (props) => {
 
   useEffect(() => {
     setTimeout(() => {
-      setFade("scrollend")
+      setFade("scrollend");
     }, 100)
   
     return () => {
@@ -31,8 +31,8 @@ const Festival = (props) => {
   
   return (
     <Container>
-        <Row>
-          <Col md={12} lg={12}>
+      <Row>
+        <Col md={12} lg={12}>
         <div className="festival_container" >
             <Banner />
             <h4 className="festival" style={{ margin: "0 0 30px 10px", fontFamily: "SCDream7" }}>진행 중인 행사</h4>
@@ -46,16 +46,16 @@ const Festival = (props) => {
           
         </div>
         </Col>
-        <Col  md={12} lg={12}>
-         <Container >
-              <Row>
-                {
-                  post.length 
-                  ? post.map((item, i) => <FestivalCard data={item} i={i} key={item.id} /> )
-                  : null
-                }
-              </Row>
-            </Container>
+        <Col md={12} lg={12}>
+          <Container >
+            <Row className="row gx-0">
+              {
+                post.length 
+                ? post.map((item, i) => <FestivalCard data={item} i={i} key={item.id} /> )
+                : <div className="dataNone">진행 중인 행사가 없습니다 🥲</div>
+              }
+            </Row>
+          </Container>
         </Col>
     </Row>
     </Container>

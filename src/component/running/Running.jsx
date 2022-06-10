@@ -6,8 +6,11 @@ import Current from "./Current";
 import '../../css/Running.css';
 import {Container,Row,Col} from 'react-bootstrap'
 import TrashMarker from './TrashMarker';
+import { useNavigate } from "react-router-dom";
 
 function Running() {
+  const navigate = useNavigate();
+  // 쓰레기통 마커 숨기기, 보이기
   const [flag, setFlag] = useState(true);
 
   // 경로추적 기능 스위치
@@ -100,6 +103,7 @@ function Running() {
 
   return (
     <>
+    <div className="running_container">
       <Map // 지도를 표시할 Container
         // 지도의 중심좌표
         center={current.center}
@@ -137,7 +141,7 @@ function Running() {
         ) : null}
 
         <Current current={current} setCurrent={setCurrent} />
-       
+
       </Map>
           <Container>
         <Row>
@@ -152,8 +156,15 @@ function Running() {
           <div className='running_topBar_empty'>
 
           </div>
-          <div className='running_topBar_trashCan' onClick={() => {setFlag(!flag)}}>
-
+          <div
+            className='running_topBar_trashCan'
+            onClick={() => setFlag(!flag)}
+            style={
+              flag
+              ? {filter: "brightness(70%)"}
+              : {filter: "brightness(100%)"}
+            }
+          >
           </div>
         </div>
         <div className='running_bottomBar_add' onClick={() =>
@@ -186,6 +197,22 @@ function Running() {
       </Col>
       </Row>
       </Container>
+    </div>
+
+    <div className="showOnPc_container">
+      <div className="showOnPc_img">
+        <img src="/pc_img.png" />
+      </div>
+      <div className="showOnPc_content">
+        <span><span style={{color: "#49e594"}}>JubGo</span>는 모바일에 최적화되어 있습니다</span>
+        <br/>
+        <span><span style={{color: "#49e594"}}>모바일</span>로 접속해 주세요 🙂</span>
+      </div>
+      <div
+        className="showOnPc_btn"
+        onClick={() => {navigate('/')}}
+      >Home</div>
+    </div>
     </>
   );
 }

@@ -13,7 +13,7 @@ export default function FestivalCard({ data }) {
   }
 
   return (
-    <Col className="cardGrid" md={6} lg={3} style={{padding:"px"}}>
+    <Col className="cardGrid" md={6} lg={3}>
       <Card className="cardContainer">
         <Card.Img variant="top" className="cardImg" src={`${data.image}`}
           onError={(e) => e.target.src="/noimage.png"}
@@ -32,7 +32,7 @@ export default function FestivalCard({ data }) {
           <Card.Subtitle className="cardDate" style={{fontFamily: "SCDream4"}}>{data.date}</Card.Subtitle>
           <br/>
           <button className="cardBtn" onClick={()=>{handleClick()}}>
-            <img src={flag ? "/clicklike.png" : "/like.png"} style={{width: 20, userSelect: "none"}} alt="likeBtn"/>
+            <img src={flag ? "/clicklike.png" : "/like.png"} style={{userSelect: "none"}} alt="likeBtn"/>
           </button>
         </Card.Body>
       </Card>

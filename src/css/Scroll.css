@@ -12,6 +12,11 @@
 }
 
 /* Festival.js */
+.dataNone {
+  font-family: "SCDream4";
+  text-align: center;
+  padding: 50px;
+}
 .scroll {
   font-family: "SCDream4";
   position: absolute;
@@ -37,7 +42,7 @@
 }
 .scrollend {
   opacity: 0;
-  /* transform: translateY(30px); */
+  transform: translateY(-30px);
   transition: ease-in 1.5s;
-  /* transition: 1.5s; */
+  transition: 1.5s;
 }

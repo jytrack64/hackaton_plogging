@@ -98,3 +98,17 @@ span.or-txt::after {
   color: #49e594;
   font-weight: 600;
 }
+
+@media screen and (max-width: 480px) {
+  .loginContainer {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .loginContainer {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
