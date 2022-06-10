@@ -3,13 +3,14 @@ import {Carousel} from 'react-bootstrap'
 import mainSlider1 from '../../image/mainSlider1.png'
 import mainSlider2 from '../../image/mainSlider2.png'
 import mainSlider3 from '../../image/mainSlider3.png'
+import '../../css/Main.css'
 
 
 
 function MainSlider() {
   return (
-    <Carousel>
-    <Carousel.Item>
+    <Carousel className="sliderImg">
+    <Carousel.Item className="sliderBox">
       <img
         className="d-block w-100"
         src={mainSlider1}
@@ -19,7 +20,7 @@ function MainSlider() {
 
       </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item>
+    <Carousel.Item className="sliderBox">
       <img
         className="d-block w-100"
         src={mainSlider2}
@@ -30,7 +31,7 @@ function MainSlider() {
        
       </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item>
+    <Carousel.Item className="sliderBox">
       <img
         className="d-block w-100"
         src={mainSlider3}

@@ -17,6 +17,7 @@ import Comment from "./component/profile/Writing";
 import "./css/Scroll.css";
 import "./styles/fonts/font.css";
 import "./index.css";
+import "./css/Main.css";
 
 import { Container, Row, Col } from "react-bootstrap";
 // Grid
@@ -55,7 +56,7 @@ export default function App() {
   return (
     <>
       <Menubar />
-      <div className="temp">
+      <div className="temp tempFor" >
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main data={data} />} />
@@ -87,3 +88,8 @@ export default function App() {
     </>
   );
 }
+
+
+
+ 
+ 
