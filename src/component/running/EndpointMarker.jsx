@@ -12,8 +12,8 @@ function EndpointMarker(props) {
             image={{
               src: "/endpointImg.png", // 마커이미지의 주소
               size: {
-                width: 50,
-                height: 50
+                width: 35,
+                height: 35
               }, // 마커이미지의 크기
             }}
             title={position.title} // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시

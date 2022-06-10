@@ -23,8 +23,7 @@ export default function Profile () {
 	let navigate = useNavigate();
 	let [userName, nameChange] = useState(["손흥민"]);
 	// 임시 유저 네임 데이터
-	let [userImage, imageChange] = useState(["https://cdn.onlinewebfonts.com/svg/img_285684.png"])
-	// 임시 이미지 데이터
+	let [userImage, imageChange] = useState(['/img_285684.png'])
 
 	// 임시 프로필 useState
 

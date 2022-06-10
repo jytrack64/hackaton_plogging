@@ -35,6 +35,7 @@
 }
 
 .menubar_profile {
+  width: 35px;
   background-image: url('../image/profile_icon.png');
   background-size: 35px 35px;
   background-position: center;

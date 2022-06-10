@@ -306,16 +306,7 @@ function Running() {
         {endposition && <EndpointMarker endposition={endposition} />}
       </Map>
 
-          </div>
-          <div
-            className='running_topBar_trashCan'
-            onClick={() => setFlag(!flag)}
-            style={
-              flag
-              ? {filter: "brightness(70%)"}
-              : {filter: "brightness(100%)"}
-            }
-          >
+          
        <div className="running_topBarBox">
           <div className='running_topBar'>
             <div className='running_topBar_searchBar'>
@@ -333,9 +324,16 @@ function Running() {
             <div className='running_topBar_empty'>
 
             </div>
-            <div className='running_topBar_trashCan' onClick={() => {setFlag(!flag)}}>
-
-            </div>
+            <div
+            className='running_topBar_trashCan'
+            onClick={() => setFlag(!flag)}
+            style={
+              flag
+              ? {filter: "brightness(70%)"}
+              : {filter: "brightness(100%)"}
+            }
+          >
+          </div>
           </div>
         </div>
         <div className='running_bottomBar_add' onClick={() =>
@@ -397,7 +395,6 @@ function Running() {
             </div>
           </div>
         </div>
-      </div>
     </div>
 
     <div className="showOnPc_container">

@@ -90,7 +90,7 @@ function DetailFestival(props) {
             className="mb-3"
             style={{ marginTop: "30px", fontSize: "25px" }}
           >
-            <Tab eventKey="home" title="행사정보">
+            <Tab eventKey="home" title="행사정보" >
               <div className={`start ${fade}`}>
                 <div className="detail_content_container">
                   <span className="detail_content_line">
