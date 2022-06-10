@@ -1,53 +1,53 @@
 .main {
   display: flex;
-
   background-image: url(../image/mainBgImg.png);
   background-position: center top 100px;
-  background-size: contain;
+  background-size: auto;
   align-items: center;
   height: 3080px;
+  width: 100%;
   flex-direction: column;
   background-repeat: no-repeat;
 }
 
-.mainBox{
+
+.mainBox {
   display: flex;
-  width: auto;
-  height : 500px; 
+  align-items: center;
+    height: 500px;
 }
 
-.mainInfo_text{
+.mainInfo_text {
   display: flex;
   margin-top: 140px;
+ 
   text-align: center;
-  font-family: 'GmarketSansMedium';
+  font-family: "GmarketSansMedium";
   font-size: 1.5rem;
 }
 
-.main_festivalInfo{
+.main_festivalInfo {
   display: flex;
   width: 450px;
   height: 450px;
   align-items: center;
+  width: ;
 }
 
-@media screen and (max-width: 768px) {
-  .main2 {
-    display: none;
-  }
-}
+ 
 
 /* 768px까지 main2 안보이게 데탑 사이즈되면 자동으로 보임 */
 
-.headline1{
+
+
+.headline1 {
   display: flex;
   margin-top: 120px;
 }
 
-.headline2{
+.headline2 {
   display: flex;
   margin-top: 270px;
-
 }
 
 .headline_text {
@@ -71,7 +71,6 @@
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-
 }
 .eventButton {
   display: flex;
@@ -86,24 +85,22 @@
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-
+  margin-bottom: 50px;
 }
 
-.eventButtonText{
-display: flex;
-font-family: 'GmarketSansMedium';
-color: white;
-letter-spacing: 0.3rem;
-
-}
-
-.startButtonText{
+.eventButtonText {
   display: flex;
-  font-family: 'GmarketSansMedium';
+  font-family: "GmarketSansMedium";
   color: white;
   letter-spacing: 0.3rem;
-  
-  }
+}
+
+.startButtonText {
+  display: flex;
+  font-family: "GmarketSansMedium";
+  color: white;
+  letter-spacing: 0.3rem;
+}
 
 .startButton:hover {
   width: 170px;
@@ -119,3 +116,43 @@ letter-spacing: 0.3rem;
 
   filter: brightness(80%);
 }
+
+* {
+  cursor: url(/public/user-solid.svg);
+}
+
+
+
+
+/* lg사이즈  */
+
+@media screen and (min-width: 1080px) {
+
+  .sliderBox {
+    width: 100%;
+   }
+
+  .sliderImg {
+     width: 100%;
+  
+  }
+
+  .sliderImg img {
+    height: 150vh;
+  
+  }
+
+  .eventButton {
+    margin-bottom: 100px;
+
+  }
+
+
+
+}
+
+
+ 
+
+
+ 
