@@ -116,7 +116,7 @@
   bottom:170px;
   width: 60px;
   height: 60px;
-  z-index: 3;
+  z-index: 1;
 
 
   background-image: url('../image/myLocBtn.png');
@@ -135,7 +135,7 @@
   bottom:0;
 justify-content: center;
 
-  z-index: 1;
+  z-index: 2;
 }
 .running_bottomBar{
   display: flex;
@@ -145,7 +145,7 @@ justify-content: center;
 
   width:100vw;
   height: 20vh;
-  z-index: 1;
+  z-index: 2;
 
 }
 
@@ -304,4 +304,12 @@ display: none;
   }
   
 
+}
+
+.routeShadow{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
 }

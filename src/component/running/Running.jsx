@@ -396,7 +396,9 @@ function Running() {
           </div>
         </div>
     </div>
+    {leftButton ? <div className="routeShadow">
 
+    </div> : null}
     <div className="showOnPc_container">
       <div className="showOnPc_img">
         <img src="/pc_img.png" />
