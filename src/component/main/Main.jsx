@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../css/Main.css";
 import MainSlider from "../slider/MainSlider";
+import MainSlider2 from "../slider/MainSlider2";
 
 import { gsap } from "gsap";
 import { useNavigate } from "react-router-dom";
@@ -76,13 +77,13 @@ function Main(props) {
         <div
           style={{
             marginTop: "20px",
-            border: "2px solid rgba(0,0,0,0.3)",
+           
             width: "100%",
           }}
         />
         <div />
 
-        <div className="mainBox" style={{ height: "325px" }}>
+        <div className="mainBox2">
           <div className="headline1">
             <h3 className="headline_text">
               <span style={{ color: "#49e594" }}>참여</span>가능한
@@ -96,7 +97,7 @@ function Main(props) {
           <Container>
             <Row className="row gx-0">
               {post.map((item, i) =>
-                i < 4 ? <FestivalCard data={item} i={i} key={item.id} /> : null
+                i < 1 ? <FestivalCard data={item} i={i} key={item.id} /> : null
               )}
             </Row>
           </Container>
@@ -111,7 +112,7 @@ function Main(props) {
         >
           <span className="eventButtonText">더보러가기</span>
         </div>
-        <div style={{ border: "2px solid rgba(0,0,0,0.3)", width: "100%" }} />
+        <div  />
         <div />
 
         <div className="headline2">
@@ -125,8 +126,7 @@ function Main(props) {
             <br />
             <span style={{ color: "#49e594" }}>건강해지기</span>
           </h3>
-        </div>
-        <div
+          <div
           className="startButton"
           onClick={handleStartClick}
           ref={(el) => {
@@ -134,6 +134,23 @@ function Main(props) {
           }}
         >
           <span className="startButtonText">달리러가기</span>
+        </div>
+        </div>
+
+
+        <div className="mainBox2">
+          <div className="headline1">
+            <h3 className="headline_text">
+              <span style={{ color: "#49e594" }}>줍고</span>와함께
+              <br />
+              <span style={{ color: "#49e594" }}>노력한결과</span>
+            </h3>
+          </div>
+        </div>
+        
+        <MainSlider2/>
+        <div className="mainBottom">
+
         </div>
       </div>
     </div>
