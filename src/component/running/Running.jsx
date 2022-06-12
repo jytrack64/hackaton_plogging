@@ -241,6 +241,7 @@ function Running() {
   },[start])
   
   useInterval(()=>{
+    if(start){
       setPlogsec(plogsec+1);
 
       if(plogsec>58)
@@ -254,6 +255,7 @@ function Running() {
         setPlogmin(0);
         setPloghour(ploghour+1)
       }
+    }
   }, pause ? null : 1000)
 
 
