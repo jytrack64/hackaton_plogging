@@ -1,6 +1,5 @@
-import ReactDOM from "react-dom/client";
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
@@ -14,13 +13,11 @@ import DetailFestival from "./component/festival/DetailFestival";
 import Running from "./component/running/Running";
 import Writing from "./component/profile/Writing";
 import Comment from "./component/profile/Writing";
+
 import "./css/Scroll.css";
 import "./styles/fonts/font.css";
 import "./index.css";
 import "./css/Main.css";
-
-import { Container, Row, Col } from "react-bootstrap";
-// Grid
 
 export default function App() {
   const [loading, setLoading] = useState(false);
@@ -57,33 +54,31 @@ export default function App() {
     <>
       <Menubar />
       <div className="temp tempFor" >
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Main data={data} />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route
-              path="/event"
-              element={
-                <Festival
-                  setCategory={setCategory}
-                  category={category}
-                  data={data}
-                />
-              }
-            />
-            <Route path="/profile" element={<Profile />} />
-            <Route
-              path="/detail/:id"
-              element={<DetailFestival data={data} />}
-            />
-            <Route path="/running" element={<Running />} />
-            <Route path="/writing" element={<Writing />} />
-            <Route path="/running" element={<Running />} />
-            <Route path="/comment" element={<Comment />} />
-            <Route path="*" element={<div>없는페이지입니다</div>} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main data={data} />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route
+            path="/event"
+            element={
+              <Festival
+                setCategory={setCategory}
+                category={category}
+                data={data}
+              />
+            }
+          />
+          <Route path="/profile" element={<Profile />} />
+          <Route
+            path="/detail/:id"
+            element={<DetailFestival data={data} />}
+          />
+          <Route path="/running" element={<Running />} />
+          <Route path="/writing" element={<Writing />} />
+          <Route path="/running" element={<Running />} />
+          <Route path="/comment" element={<Comment />} />
+          <Route path="*" element={<div>없는페이지입니다</div>} />
+        </Routes>
       </div>
     </>
   );
@@ -91,5 +86,5 @@ export default function App() {
 
 
 
- 
- 
+
+
