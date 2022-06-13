@@ -4,16 +4,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
+import { Container } from "react-bootstrap";
 // import Location from "../src/component/main/Location";
 
+const Home = () => {
+  return <div></div>;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-  <BrowserRouter>
     <App />
-  </BrowserRouter>
   </>
 );
 

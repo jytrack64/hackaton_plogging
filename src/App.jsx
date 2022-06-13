@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import React, { useEffect, useState } from "react";
-import { Route, Routes  } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 
@@ -57,6 +57,7 @@ export default function App() {
     <>
       <Menubar />
       <div className="temp tempFor" >
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main data={data} />} />
             <Route path="/login" element={<Login />} />
@@ -82,6 +83,7 @@ export default function App() {
             <Route path="/comment" element={<Comment />} />
             <Route path="*" element={<div>없는페이지입니다</div>} />
           </Routes>
+        </BrowserRouter>
       </div>
     </>
   );
