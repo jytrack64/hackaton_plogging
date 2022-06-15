@@ -55,7 +55,7 @@ function Main(props) {
         <div className="mainBox">
           <div className="mainInfo_text">
             <span>
-              저희 줍고는요잉.d.{" "}
+              저희 줍고는{" "}
               <span style={{ color: "#49e594", fontWeight: "bold" }}>
                 플로깅 사용자
               </span>
