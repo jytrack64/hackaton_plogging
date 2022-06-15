@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import '../css/Menubar.css'
 
 export default function Menubar() {
+  const navigate = useNavigate();
+
   const handleResize =() => {
   }
 
@@ -38,8 +40,8 @@ export default function Menubar() {
             <Offcanvas.Body>
             <Navbar.Brand className='menubar_name1' href="/">줍고</Navbar.Brand>
               <Nav  className="justify-content-start flex-grow-1 pe-3">
-                <Nav.Link href="https://jubgo.herokuapp.com/">메인화면</Nav.Link>
-                <Nav.Link href="https://jubgo.herokuapp.com/running">달리기</Nav.Link>
+                <Nav.Link onClick={()=>{navigate('/')}}>메인화면</Nav.Link>
+                <Nav.Link onClick={()=>{navigate('/running')}}>달리기</Nav.Link>
                 <Nav.Link href="https://jubgo.herokuapp.com/event">행사목록</Nav.Link>
                 <Nav.Link href="https://jubgo.herokuapp.com/login">로그인</Nav.Link>
               </Nav>
