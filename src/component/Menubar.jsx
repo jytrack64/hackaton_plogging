@@ -38,15 +38,15 @@ export default function Menubar() {
             <Offcanvas.Body>
             <Navbar.Brand className='menubar_name1' href="/">줍고</Navbar.Brand>
               <Nav  className="justify-content-start flex-grow-1 pe-3">
-                <Nav.Link href="https://jubgo.herokuapp.com//">메인화면</Nav.Link>
-                <Nav.Link href="https://jubgo.herokuapp.com//running">달리기</Nav.Link>
-                <Nav.Link href="https://jubgo.herokuapp.com//event">행사목록</Nav.Link>
-                <Nav.Link href="https://jubgo.herokuapp.com//login">로그인</Nav.Link>
+                <Nav.Link href="https://jubgo.herokuapp.com/">메인화면</Nav.Link>
+                <Nav.Link href="https://jubgo.herokuapp.com/running">달리기</Nav.Link>
+                <Nav.Link href="https://jubgo.herokuapp.com/event">행사목록</Nav.Link>
+                <Nav.Link href="https://jubgo.herokuapp.com/login">로그인</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
           <Navbar.Brand className='menubar_name2' href="/">JubGo</Navbar.Brand>
-          <Navbar.Brand className='menubar_profile font-size-2rem' style={{fontSize:'25px'}} href='https://jubgo.herokuapp.com//profile'>ㅤㅤ</Navbar.Brand>
+          <Navbar.Brand className='menubar_profile font-size-2rem' style={{fontSize:'25px'}} href='https://jubgo.herokuapp.com/profile'>ㅤㅤ</Navbar.Brand>
         </Container>
       </Navbar>
       ))}
